@@ -5,7 +5,7 @@ This widget allows you to quickly and easily add a stopwatch to your page. It's 
 
 ###Usage
 
-Getting started is very simple. First, include the stopwatch CSS file and the JavaScript file in your document HEAD. If you're not already using jQuery, you'll need to include this, as well.
+Getting started is very simple. First, include the stopwatch CSS file and the JavaScript file in your document `<head>`. If you're not already using jQuery, you'll need to include this, as well.
 
 In production, it's a good idea to use the included minified versions of the theme CSS and the stopwatch widget JavaScript file.
 
@@ -15,7 +15,7 @@ In production, it's a good idea to use the included minified versions of the the
 <script type="text/javascript" src="./stopwatch/jq.stopwatch.min.js"></script>
 ```
 
-Next, inside of your document, where you would like the stopwatch to be placed, insert a container DIV.
+Next, inside of your document, where you would like the stopwatch to be placed, insert a container `<div>`.
 
 ```html
 <div id="myStopwatch"></div>
