@@ -21,7 +21,7 @@ Next, inside of your document, where you would like the stopwatch to be placed, 
 <div id="myStopwatch"></div>
 ```
 
-Now, at the end of your document, just before the closing BODY tag, initialize the stopwatch.
+Now, at the end of your document, just before the closing `</body>` tag, initialize the stopwatch.
 
 ```javascript
 <script type="text/javascript">
