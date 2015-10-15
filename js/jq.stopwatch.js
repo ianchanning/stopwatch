@@ -39,27 +39,8 @@
       });
 
       function runStopwatch() {
-        // We need to get the current time value within the widget.
-        var hour = parseFloat(timeHour.text());
-        var minute = parseFloat(timeMin.text());
-        var second = parseFloat(timeSec.text());
-
-        second++;
-
-        if(second > 59) {
-          second = 0;
-          minute = minute + 1;
-        }
-
-        if(minute > 59) {
-          minute = 0;
-          hour = hour + 1;
-        }
-
-        timeHour.html("0".substring(hour >= 10) + hour);
-        timeMin.html("0".substring(minute >= 10) + minute);
-        timeSec.html("0".substring(second >= 10) + second);
+        $(this).chkWatch().tick(timeSec, 60).tick(timeMin, 60).tick(timeHour, 24);
       }
     });
-  }
+  };
 })(jQuery);
