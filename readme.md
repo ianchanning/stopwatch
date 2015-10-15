@@ -9,21 +9,27 @@ Getting started is very simple. First, include the stopwatch CSS file and the Ja
 
 In production, it's a good idea to use the included minified versions of the theme CSS and the stopwatch widget JavaScript file.
 
-    <link rel="stylesheet" href="./stopwatch/jq.stopwatch.min.css">
-    <!-- include jQuery before you include the stopwatch, if you have not already done so -->
-    <script type="text/javascript" src="./stopwatch/jq.stopwatch.min.js"></script>
+```html
+<link rel="stylesheet" href="./stopwatch/jq.stopwatch.min.css">
+<!-- include jQuery before you include the stopwatch, if you have not already done so -->
+<script type="text/javascript" src="./stopwatch/jq.stopwatch.min.js"></script>
+```
 
 Next, inside of your document, where you would like the stopwatch to be placed, insert a container DIV.
 
-    <div id="myStopwatch"></div>
+```html
+<div id="myStopwatch"></div>
+```
 
 Now, at the end of your document, just before the closing BODY tag, initialize the stopwatch.
 
-    <script type="text/javascript">
-      $(function() {
-        $('#myStopwatch').stopwatch('theme-1');
-      });
-    </script>
+```javascript
+<script type="text/javascript">
+  $(function() {
+    $('#myStopwatch').stopwatch('theme-1');
+  });
+</script>
+```
 
 ###Themes
 
@@ -36,48 +42,60 @@ If you wish to create your own theme, you have a couple of options:
 
 Creating a theme is fairly straightforward. Below is the generated HTML that the stopwatch widget creates, for your reference. More information about theme structure can be found at the top of the `jq.stopwatch.css` file.
 
-    <div id="myStopwatch" class="stopwatch theme-1">
-      <div class="the-time">
-        <span class="hr">00</span>
-        <span class="min">00</span>
-        <span class="sec">00</span>
-        <span class="hsec">00</span>
-      </div>
-      <a href="" class="start-stop">Start</a>
-      <a href="" class="reset">Reset</a>
-    </div>
+```html
+<div id="myStopwatch" class="stopwatch theme-1">
+  <div class="the-time">
+    <span class="hr">00</span>
+    <span class="min">00</span>
+    <span class="sec">00</span>
+    <span class="hsec">00</span>
+  </div>
+  <a href="" class="start-stop">Start</a>
+  <a href="" class="reset">Reset</a>
+</div>
+```
 
 ###Multiple Instances
 
 Note that you can also include multiple instances of the stopwatch widget on a single page. For instance:
 
-    <div id="myStopwatch1"></div>
-    <div id="myStopwatch2"></div>
+```html
+<div id="myStopwatch1"></div>
+<div id="myStopwatch2"></div>
+```
 
-    <script type="text/javascript">
-      $(function() {
-        $('#myStopwatch1').stopwatch('theme-1');
-        $('#myStopwatch2').stopwatch('theme-4');
-      });
-    </script>
+```javascript
+<script type="text/javascript">
+  $(function() {
+    $('#myStopwatch1').stopwatch('theme-1');
+    $('#myStopwatch2').stopwatch('theme-4');
+  });
+</script>
+```
 
 If you're initializing all stopwatches with the same theme, you can combine selectors:
 
-    <script type="text/javascript">
-      $(function() {
-        $('#myStopwatch1, #myStopwatch2').stopwatch('theme-1');
-      });
-    </script>
+```javascript
+<script type="text/javascript">
+  $(function() {
+    $('#myStopwatch1, #myStopwatch2').stopwatch('theme-1');
+  });
+</script>
+```
 
 Or give them a shared class name:
 
-    <div class="myStopwatch"></div>
+```html
+<div class="myStopwatch"></div>
+```
 
-    <script type="text/javascript">
-      $(function() {
-        $('.myStopwatch').stopwatch('theme-1');
-      });
-    </script>
+```javascript
+<script type="text/javascript">
+  $(function() {
+    $('.myStopwatch').stopwatch('theme-1');
+  });
+</script>
+```
 
 ###Questions?
 
