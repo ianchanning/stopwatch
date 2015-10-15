@@ -58,6 +58,9 @@
   background-image: linear-gradient(top, #222222 0%, #555555 100%);
   text-align: center;
 }
+.stopwatch .hsec:before {
+  content: '.';
+}
 .stopwatch.theme-1 .min:before {
   content: ':';
 }
@@ -271,7 +274,7 @@
   overflow: hidden;
   padding: 1em;
   position: relative;
-  width: 140px;
+  width: 150px;
 }
 .stopwatch.theme-3 * {
   box-sizing: border-box;
@@ -678,7 +681,7 @@
   overflow: hidden;
   padding: 10px;
   position: relative;
-  width: 120px;
+  width: 140px;
 }
 .stopwatch.theme-7 * {
   box-sizing: border-box;
@@ -922,7 +925,7 @@
   height: auto;
   overflow: hidden;
   position: relative;
-  width: 260px;
+  width: 330px;
 }
 .stopwatch.theme-10 * {
   box-sizing: border-box;
