@@ -31,7 +31,7 @@
       resetBtn.bind('click', function(e) {
           e.preventDefault();
           clearInterval(timer);
-          startStopBtn.text('Stop');
+          startStopBtn.text('Start');
           timer = 0;
           timeHour.text('00');
           timeMin.text('00');
