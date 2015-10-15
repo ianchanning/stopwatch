@@ -38,9 +38,10 @@ Creating a theme is fairly straightforward. Below is the generated HTML that the
 
     <div id="myStopwatch" class="stopwatch theme-1">
       <div class="the-time">
-        <span class="hr">00</span<
-        <span class="min">00</span<
-        <span class="sec">00</span<
+        <span class="hr">00</span>
+        <span class="min">00</span>
+        <span class="sec">00</span>
+        <span class="hsec">00</span>
       </div>
       <a href="" class="start-stop">Start</a>
       <a href="" class="reset">Reset</a>
